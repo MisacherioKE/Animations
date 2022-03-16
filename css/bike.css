@@ -1,0 +1,55 @@
+.wheels{
+    height: 300px;
+    margin-left: 200px;
+    animation-name: wheels;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform: rotate(90deg);
+
+}
+@keyframes wheels{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    
+    }
+}
+.bike{
+    top: 50px;
+    width: 100%;
+    animation-name: bike;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: left 6s;
+    position: absolute;
+    margin-right: -900px;
+}
+@keyframes bike{
+    from{
+        right: 0;
+    }
+    to{
+        margin-right: 100%;
+        left: -60%;
+    }
+}
+.two{
+    margin-left: 345px;
+}
+.tyres{
+    top: 400px;
+    position: absolute;
+}
+.body{
+    position: absolute;
+    top: 245px;
+    left: 345px;
+}
+.rider{
+    position: absolute;
+    left: 480px;
+    height: 550px;
+    top: -15px;
+}

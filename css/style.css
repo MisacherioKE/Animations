@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Div1{
+    height: 300px;
+    width: 200px;
+    background-color: aquamarine;
+    transition: width 2s, height 2s, background-color 2s;
+}
+.Div1:hover{
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+}
+.Image{
+    height: 200px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 200px;
+    transition: 15s;
+}
+.Image:hover{
+    transform: rotate(60deg);
+}
+/*page 2*/
+
+.Div3{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+    animation-name: myAnime;
+    animation-duration: 4s;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnime{
+ /*from{
+    background-color: chartreuse;
+    top:0;
+    left: 0;
+}
+to{
+    background-color: crimson;
+    top: 0;
+    right: 0;
+}*/
+0%{
+    top: 0;
+    left: 0;
+}
+25%{
+    top: 0;
+    right: 0;
+}
+50%{
+    bottom: 0;
+    right: 0;
+}
+75%{
+    bottom: 0;
+}
+}
+/* page3*/
+
+.mainDiv{
+    position: relative;
+    background-color: rgb(221, 215, 215);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.mainDiv img{
+    position: absolute;
+    
+}
+.monkey{
+    height: 400px;
+    top: -100px;
+    left: -200px;
+    animation-name: monkey;
+    animation-duration: 4s;
+    }
+    @keyframes monkey{
+        from{
+            transform: rotate(90deg);
+        }
+        to{
+            transform: rotate(360deg);
+            top: -100px;
+            left: -200px;
+        }
+    }
+    .flower{
+        position: absolute;
+        height: 400px;
+        right: 0px;
+        top: -50px;
+        animation-name: flower;
+        animation-duration: 4s;
+    }
+    
+    @keyframes flower{
+        from{
+            transform: rotate(0deg);
+            right: -300px;
+        }
+        to{
+            right: 0px;
+            top: -50px;
+            transform: rotate(-360deg);
+        }
+    }
+    
+
+.tablet{
+   position: absolute;
+   right: -250px;
+   bottom: -150px;
+   animation-name: tablet;
+   animation-duration: 4s;
+}
+@keyframes tablet{
+    from{
+        transform: rotate(0deg);
+        bottom: -400px;
+    }
+    to{
+        transform: rotate(100deg);
+        right: -250px;
+        bottom: -150px;
+    }
+}
+.pen{
+   position: absolute;
+   bottom: 0px;
+   right: 400px;
+   animation-name: pen;
+   animation-duration: 4s;
+}
+@keyframes pen{
+    from{
+        transform: rotate(0deg);
+        right: -300px;
+    }
+    to{
+        transform: rotate(-360deg);
+        bottom: 0px;
+        right: 400px;  
+    }
+}
+.papers{
+    position: absolute;
+    bottom: -400px;
+    left: -350px;
+    animation-name: papers;
+    animation-duration: 4s;
+}
+@keyframes papers{
+    from{
+        transform: rotate(-60deg);
+        left: -100px;
+    }
+    to{
+        transform: rotate(90deg);
+        bottom: -400px;
+        left: -350px;
+    }
+}
+.edding{
+    position: absolute;
+    z-index: 1;
+    bottom: -150px;
+    left: 150px;
+    animation-name: edding;
+    animation-duration: 4s;
+}
+@keyframes edding{
+    from{
+        transform: rotate(0deg);
+        bottom: -400px;
+    }
+    to{
+        transform: rotate(-20deg);
+        bottom: -150px;
+        left: 150px;
+    }
+}
+.marker{
+    position: absolute;
+    z-index: 1;
+    bottom: 150px;
+    left: 150px;
+    animation-name: marker;
+    animation-duration: 4s;
+}
+@keyframes marker{
+    from{
+        transform: rotate(0deg);
+        bottom: -400px;
+    }
+    to{
+        transform: rotate(-10deg);
+        bottom: 150px;
+        left: 150px; 
+    }
+}
+.paperclip2{
+    position: absolute;
+    bottom: 350px;
+    left: 450px;
+    animation-duration: 4s;
+    animation-name: paperclip2;
+}
+@keyframes paperclip2{
+    from{
+        bottom: -400px;
+
+    }
+    to{
+        bottom: 350px;
+        left: 450px; 
+    }
+}
+.paperclip1{
+    position: absolute;
+    bottom: 380px;
+    left: 400px;
+    transform: rotate(-50deg);
+    animation-name: paperclip1;
+    animation-duration: 4s;
+}
+@keyframes paperclip1{
+    from{
+        bottom: -400px;
+
+    }
+    to{
+        bottom: 380px;
+        left: 400px;
+    }
+}
+
+.centreDiv{
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    text-align: center;
+}
+.centreDiv a{
+    text-decoration: none;
+    background-color: tomato;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.centreDiv a:hover{
+    background-color: black;
+}
+.centreDiv p{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: grey;
+}
+.centreDiv h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(44, 42, 42);
+}

@@ -1,0 +1,25 @@
+.car{
+    height: 200px;
+    position: absolute;
+    animation-name: car;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: right 6s;
+}
+@keyframes car{
+    from{
+        left: 0;
+        
+    }
+    to{
+        margin-left: 100%;
+
+    }
+}
+.road{
+    background-color: black;
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    top: 185px;
+}
